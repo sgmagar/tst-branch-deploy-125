@@ -67,7 +67,6 @@ platform(:android) do
 
     gradle(task: 'bundleRelease')
     puts("Build version output #{build_version}")
-    puts("Version Code #{lane_context[SharedValues::VERSION_CODE]}")
     puts("Build version #{ENV['BUILD_VERSION']}")
   end
 
