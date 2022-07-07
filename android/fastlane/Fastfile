@@ -67,7 +67,7 @@ platform(:android) do
 
     gradle(task: 'bundleRelease')
     puts("Build version output #{build_version}")
-    puts("Build version #{ENV['BUILD_VERSION']}")
+    ENV['BUILD_VERSION'] = build_version
   end
 
   # Update app URL in CB app DB
