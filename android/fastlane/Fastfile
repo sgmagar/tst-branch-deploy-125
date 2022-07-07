@@ -69,7 +69,7 @@ platform(:android) do
     puts("Build version output #{build_version}")
     sh "echo $BASH_ENV"
     sh "echo \"export BUILD_VERSION=#{build_version}\" >> $BASH_ENV"
-    sh "source $BASH_ENV"
+    sh ". $BASH_ENV"
   end
 
   # Update app URL in CB app DB
